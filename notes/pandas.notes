@@ -1,0 +1,5 @@
+!pandas!
+- Series allows for the creation of dictionary like structures with keys and values
+- if nothing is passed as the keys they will auto_increment from 0
+- otherwise you can pass both the labels and the data but the length must match up.
+- 
