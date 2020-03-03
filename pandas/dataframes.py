@@ -52,7 +52,9 @@ hier_index = list(zip(outside, inside))
 hier_index = pd.MultiIndex.from_tuples(hier_index)
 
 df = pd.DataFrame(randn(6, 2), hier_index, ['A', 'B'])
-print(df)
+# print(df)
 # print(df.loc['G1'].loc[1])
 df.index.names = ['Groups', 'Num']
-print(df.loc['G2'].loc[1]['B'])
+# print(df.loc['G2'].loc[1]['B'])
+
+print(df.xs(1, level='Num'))
